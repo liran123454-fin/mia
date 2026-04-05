@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-gold: #C9A96E;
+  --color-cream: #F5F5F0;
+  --color-dark: #1A1A1A;
+  --color-gray-soft: #888888;
+
+  /* Fonts */
+  --font-display: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-assistant), Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: var(--font-assistant), Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F5F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9A96E;
+  border-radius: 3px;
+}
+
+/* Lightbox RTL fix */
+.yarl__container {
+  direction: ltr;
+}
+
+/* MDX Blog content */
+.prose-mia h2 {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose-mia p {
+  margin-bottom: 1.5rem;
+  color: #1A1A1A;
+  line-height: 1.9;
+}
+
+.prose-mia strong {
+  font-weight: 600;
+  color: #000;
+}

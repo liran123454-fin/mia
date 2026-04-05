@@ -1,0 +1,96 @@
+import type { Dress } from './types'
+
+export const DRESSES: Dress[] = [
+  {
+    id: 'romantic-1',
+    name: 'אמורה',
+    style: 'romantic',
+    description: 'שמלה רומנטית עם תחרה עדינה ושרוולי תחרה ארוכים',
+    src: '/7068c738b6d4765ea6a059554bc25d8a_1775135309_dexs5ost.png',
+    featured: true,
+  },
+  {
+    id: 'romantic-2',
+    name: 'בלה',
+    style: 'romantic',
+    description: 'שמלת נשף עם ושושנות תפורות ביד',
+    src: '/a5f0e0e2d3e6978821158ebad325fde51761951.jpeg',
+    featured: true,
+  },
+  {
+    id: 'romantic-3',
+    name: 'סרנה',
+    style: 'romantic',
+    description: 'שמלת כלה רומנטית עם כתפיות דקות ומחשוף עמוק',
+    src: '/1775176672943-aejzgn7wvqq.jpg',
+  },
+  {
+    id: 'minimal-1',
+    name: 'לוּנָה',
+    style: 'minimal',
+    description: 'שמלה מינימליסטית נקייה עם חיתוך מדויק',
+    src: '/1775135630924-ltpriz4hyml.jpg',
+    featured: true,
+  },
+  {
+    id: 'minimal-2',
+    name: 'אֶסְתֵּר',
+    style: 'minimal',
+    description: 'שמלת עמוד אלגנטית עם שסע צדדי',
+    src: '/1775204424427-f5xhtwpsaqh.jpg',
+    featured: true,
+  },
+  {
+    id: 'minimal-3',
+    name: 'מָיָה',
+    style: 'minimal',
+    description: 'שמלת קרפ חלקה ועדינה עם כפתורים בגב',
+    src: '/images/gallery/minimal/dress-3.jpg',
+  },
+  {
+    id: 'princess-1',
+    name: 'אִירִיס',
+    style: 'princess',
+    description: 'שמלת נסיכה עם חצאית מלאה ומחוך מעוטר בפנינים',
+    src: '/1775135777410-jb7rigprbxs.jpg',
+    featured: true,
+  },
+  {
+    id: 'princess-2',
+    name: 'רוֹזָה',
+    style: 'princess',
+    description: 'שמלת בָּל מפוארת עם שובל מלכותי',
+    src: '/images/gallery/princess/dress-2.jpg',
+  },
+  {
+    id: 'princess-3',
+    name: 'גָּלִיל',
+    style: 'princess',
+    description: 'שמלת נסיכה עם כתפיות off-shoulder ותחרה צרפתית',
+    src: '/images/gallery/princess/dress-3.jpg',
+  },
+  {
+    id: 'boho-1',
+    name: 'טֶרָה',
+    style: 'boho',
+    description: 'שמלה בוהמיינית עם תחרה חופשית ושרוולי בוהו',
+    src: '/1775135828971-nhmhzjkm65.jpg',
+    featured: true,
+  },
+  {
+    id: 'boho-2',
+    name: 'פְּלוֹרָה',
+    style: 'boho',
+    description: 'שמלת שיפון זורמת עם רקמת פרחים ביד',
+    src: '/images/gallery/boho/dress-2.jpg',
+  },
+  {
+    id: 'boho-3',
+    name: 'יַעֲרָה',
+    style: 'boho',
+    description: 'שמלה חופשית עם גב פתוח ופרנז\'ים עדינים',
+    src: '/images/gallery/boho/dress-3.jpg',
+  },
+]
+
+export const FEATURED_DRESSES = DRESSES.filter((d) => d.featured)
