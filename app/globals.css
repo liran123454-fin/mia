@@ -5,7 +5,7 @@
   --color-gold: #C9A96E;
   --color-cream: #F5F5F0;
   --color-dark: #1A1A1A;
-  --color-gray-soft: #888888;
+  --color-gray-soft: #666666;
 
   /* Fonts */
   --font-display: var(--font-cormorant), Georgia, "Times New Roman", serif;
@@ -38,6 +38,25 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: 0.05em;
+}
+
+/* Skip Navigation */
+.skip-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.75rem 1.5rem;
+  background: #1A1A1A;
+  color: #ffffff;
+  font-family: var(--font-assistant), Arial, sans-serif;
+  font-size: 1rem;
+  z-index: 9999;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+.skip-nav:focus {
+  transform: translateY(0);
 }
 
 /* Scrollbar */

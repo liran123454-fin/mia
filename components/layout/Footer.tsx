@@ -59,10 +59,16 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-white/10 py-5 px-6">
+      <div className="border-t border-white/10 py-5 px-6 flex flex-col md:flex-row items-center justify-center gap-3">
         <p className="font-body text-xs text-white/30 text-center">
           © {year} MIA — בית שמלות כלה. כל הזכויות שמורות.
         </p>
+        <Link
+          href="/accessibility"
+          className="font-body text-xs text-white/30 hover:text-gold transition-colors underline"
+        >
+          הצהרת נגישות
+        </Link>
       </div>
     </footer>
   )

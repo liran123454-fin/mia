@@ -41,6 +41,10 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           {/* Drawer */}
           <motion.div
             key="drawer"
+            id="mobile-menu"
+            role="dialog"
+            aria-modal="true"
+            aria-label="תפריט ניווט"
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
@@ -65,7 +69,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             </p>
 
             {/* Nav links */}
-            <nav className="flex flex-col gap-6 mb-10">
+            <nav aria-label="תפריט ניווט נייד" className="flex flex-col gap-6 mb-10">
               {NAV_ITEMS.map((item) => (
                 <Link
                   key={item.href}

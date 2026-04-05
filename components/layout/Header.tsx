@@ -47,13 +47,14 @@ export default function Header() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav aria-label="תפריט ראשי" className="hidden md:flex items-center gap-8">
             {NAV_ITEMS.map((item) => {
               const active = pathname === item.href
               return (
                 <Link
                   key={item.href}
                   href={item.href}
+                  aria-current={active ? 'page' : undefined}
                   className={`font-body text-sm tracking-widest transition-colors duration-300 hover:text-gold ${
                     active ? 'text-gold' : scrolled ? 'text-black' : 'text-white'
                   }`}
@@ -81,6 +82,8 @@ export default function Header() {
             className="md:hidden p-2"
             onClick={() => setMenuOpen(true)}
             aria-label="פתח תפריט"
+            aria-expanded={menuOpen}
+            aria-controls="mobile-menu"
           >
             <svg
               width="24"

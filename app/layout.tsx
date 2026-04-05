@@ -57,8 +57,9 @@ export default function RootLayout({
       className={`${cormorant.variable} ${assistant.variable}`}
     >
       <body className="flex min-h-screen flex-col bg-white text-black antialiased">
+        <a href="#main-content" className="skip-nav">דלג לתוכן ראשי</a>
         <Header />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1">{children}</main>
         <Footer />
       </body>
       {gaId && <GoogleAnalytics gaId={gaId} />}
